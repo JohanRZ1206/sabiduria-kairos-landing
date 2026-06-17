@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lo que las grandes religiones saben sobre el dinero — Sabiduría Kairos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+  :root{ --azul:#1A2744; --azul2:#101a30; --oro:#C9A84C; --oro2:#e3c97a; --tinta:#2a2f37; --crema:#FCFAF4; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Lora',Georgia,serif; color:var(--tinta); background:var(--crema); line-height:1.6; }
+  .wrap{ max-width:880px; margin:0 auto; padding:0 24px; }
+  h1,h2,h3,.btn,.kicker,.eyebrow{ font-family:'Montserrat',sans-serif; }
+  .oro{ color:var(--oro); }
+  .btn{ display:inline-block; background:var(--oro); color:#3a2e0a; font-weight:800; font-size:18px;
+    letter-spacing:.02em; padding:18px 40px; border-radius:40px; text-decoration:none;
+    box-shadow:0 10px 30px rgba(201,168,76,.4); transition:transform .15s; text-align:center; }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn small{ display:block; font-weight:600; font-size:12px; color:#5e4d12; letter-spacing:.04em; margin-top:3px; }
+
+  /* HERO */
+  .hero{ background:radial-gradient(ellipse at 50% 20%, #24365e 0%, var(--azul) 50%, var(--azul2) 100%);
+    color:#fff; text-align:center; padding:64px 0 72px; }
+  .hero .eyebrow{ font-weight:600; letter-spacing:.3em; font-size:13px; color:var(--oro2); text-transform:uppercase; }
+  .hero h1{ font-weight:900; font-size:42px; line-height:1.1; margin:20px 0; letter-spacing:-1px; }
+  .hero .lede{ font-style:italic; font-size:20px; color:#cdd6e6; max-width:620px; margin:0 auto 36px; }
+  .hero img{ width:300px; max-width:70%; height:auto; filter:drop-shadow(0 26px 40px rgba(0,0,0,.5)); margin-bottom:36px; }
+  .hero .micro{ margin-top:18px; font-family:'Montserrat',sans-serif; font-size:13px; color:#9fb0cc; letter-spacing:.04em; }
+
+  /* SECTION base */
+  section{ padding:60px 0; }
+  .eyebrow-c{ text-align:center; color:#b79433; font-weight:700; letter-spacing:.24em; font-size:12px; text-transform:uppercase; }
+  h2{ text-align:center; font-weight:800; font-size:30px; color:var(--azul); line-height:1.18; margin:10px 0 8px; }
+  .barra{ width:60px; height:4px; background:var(--oro); border-radius:4px; margin:14px auto 34px; }
+  p.big{ font-size:18px; text-align:center; max-width:680px; margin:0 auto 16px; }
+
+  /* PROBLEMA */
+  .alt{ background:#fff; }
+  .quote{ font-style:italic; font-size:24px; color:var(--azul); text-align:center; max-width:680px;
+    margin:0 auto; border-left:0; }
+  .quote .by{ display:block; font-family:'Montserrat',sans-serif; font-style:normal; font-weight:600;
+    font-size:12px; letter-spacing:.12em; color:#9a7d2e; text-transform:uppercase; margin-top:16px; }
+
+  /* DESCUBRIRÁS (grid) */
+  .grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:10px; }
+  .card{ background:#fff; border:1px solid #ece4cf; border-radius:14px; overflow:hidden; }
+  .card img{ width:100%; height:120px; object-fit:cover; display:block; }
+  .card .body{ padding:18px 20px; }
+  .card h3{ font-weight:800; font-size:16px; color:var(--azul); margin-bottom:6px; }
+  .card p{ font-size:14.5px; }
+
+  /* INCLUYE */
+  .incluye{ background:var(--azul); color:#eaf0fb; }
+  .incluye h2{ color:#fff; }
+  .incluye .eyebrow-c{ color:var(--oro2); }
+  .box{ display:flex; gap:20px; align-items:center; background:rgba(255,255,255,.05);
+    border:1px solid rgba(201,168,76,.3); border-radius:14px; padding:22px 24px; margin-bottom:16px; }
+  .box .ic{ font-size:30px; min-width:40px; text-align:center; }
+  .box h3{ font-family:'Montserrat',sans-serif; font-weight:700; font-size:16px; color:#fff; margin-bottom:3px; }
+  .box p{ font-size:14.5px; color:#cdd6e6; }
+  .box .tag{ margin-left:auto; font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700;
+    color:var(--oro2); border:1px solid rgba(201,168,76,.5); border-radius:20px; padding:5px 12px; white-space:nowrap; }
+
+  /* PARA QUIÉN */
+  .dos{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .pq{ background:#fff; border-radius:14px; padding:24px 26px; border-top:4px solid var(--oro); }
+  .pq.no{ border-top-color:#c9594c; }
+  .pq h3{ font-weight:800; font-size:17px; color:var(--azul); margin-bottom:12px; }
+  .pq li{ list-style:none; font-size:15px; margin-bottom:10px; padding-left:26px; position:relative; }
+  .pq li::before{ content:'✓'; position:absolute; left:0; color:var(--oro); font-weight:800; }
+  .pq.no li::before{ content:'✕'; color:#c9594c; }
+
+  /* AUTORIDAD */
+  .auth{ background:#fff; text-align:center; }
+  .auth p{ max-width:680px; margin:0 auto 14px; font-size:16px; }
+  .fuentes{ font-family:'Montserrat',sans-serif; font-size:12px; color:#8a8575; margin-top:18px; letter-spacing:.02em; }
+
+  /* TESTIMONIOS placeholder */
+  .testi{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:18px; margin-top:10px; }
+  .t{ background:#fff; border:1px dashed #d8cba0; border-radius:14px; padding:20px; font-size:14px; color:#8a8575; font-style:italic; }
+  .testi-nota{ text-align:center; font-size:12px; color:#a89; margin-top:14px; font-family:'Montserrat',sans-serif; }
+
+  /* OFERTA */
+  .oferta{ background:radial-gradient(ellipse at 50% 0%, #24365e, var(--azul) 60%, var(--azul2)); color:#fff; text-align:center; }
+  .oferta h2{ color:#fff; }
+  .precio-box{ background:rgba(255,255,255,.06); border:1px solid rgba(201,168,76,.4); border-radius:20px;
+    max-width:480px; margin:24px auto 0; padding:38px 30px; }
+  .precio{ font-family:'Montserrat',sans-serif; font-weight:900; font-size:56px; color:var(--oro); line-height:1; }
+  .precio .moneda{ font-size:26px; vertical-align:super; }
+  .precio-sub{ color:#cdd6e6; font-size:14px; margin:6px 0 24px; }
+  .garantia{ display:flex; gap:14px; align-items:center; justify-content:center; margin-top:26px;
+    font-family:'Montserrat',sans-serif; font-size:13px; color:#cdd6e6; }
+  .garantia .sello{ font-size:30px; }
+
+  /* FOOTER */
+  footer{ background:var(--azul2); color:#9fb0cc; text-align:center; padding:40px 0; font-family:'Montserrat',sans-serif; font-size:13px; }
+  footer .marca{ font-weight:800; letter-spacing:.2em; color:#fff; text-transform:uppercase; font-size:15px; margin-bottom:8px; }
+
+  @media (max-width:680px){
+    .hero h1{ font-size:32px; } .hero .lede{ font-size:17px; }
+    h2{ font-size:24px; } .grid,.dos,.testi{ grid-template-columns:1fr; }
+    .precio{ font-size:46px; } .box{ flex-wrap:wrap; } .box .tag{ margin-left:0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Sabiduría Kairos · Serie Sabiduría y Dinero</div>
+    <img src="img/mockup.png" alt="Ebook Lo que las grandes religiones saben sobre el dinero">
+    <h1>Lo que las grandes religiones saben<br>sobre el <span class="oro">dinero</span></h1>
+    <p class="lede">Cinco tradiciones, tres mil años, una misma verdad que la educación financiera moderna olvidó — y un plan de 4 semanas para aplicarla.</p>
+    <a class="btn" href="#CHECKOUT_HOTMART">Quiero mi ejemplar<small>Acceso inmediato · Garantía de 7 días</small></a>
+    <div class="micro">Pago seguro vía Hotmart · Tarjeta, PayPal y efectivo</div>
+  </div>
+</header>
+
+<!-- PROBLEMA / PROMESA -->
+<section class="alt">
+  <div class="wrap">
+    <div class="quote">«El dinero no es el problema. El problema es cómo lo usamos, lo pensamos y lo sentimos.»
+      <span class="by">La idea que cruza las cinco tradiciones</span>
+    </div>
+    <p class="big" style="margin-top:34px;">Has leído mil consejos de finanzas y aún sientes que algo falta. Lo que falta no es otra técnica de ahorro: es <strong>la relación correcta con el dinero</strong>. Y eso, cinco religiones lo entendieron hace milenios — antes que cualquier libro de economía.</p>
+  </div>
+</section>
+
+<!-- DESCUBRIRÁS -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow-c">Lo que vas a descubrir</div>
+    <h2>Cinco tradiciones, una sabiduría que puedes usar hoy</h2>
+    <div class="barra"></div>
+    <div class="grid">
+      <div class="card"><img src="img/cap1_cristianismo.jpg" alt=""><div class="body"><h3>Cristianismo</h3><p>Por qué "el dinero es la raíz de todos los males" está mal citado — y qué cambia al corregirlo.</p></div></div>
+      <div class="card"><img src="img/cap2_islam.jpg" alt=""><div class="body"><h3>Islam</h3><p>La trampa del interés que el Corán advirtió hace 1.400 años, y cómo salir de ella.</p></div></div>
+      <div class="card"><img src="img/cap3_budismo.jpg" alt=""><div class="body"><h3>Budismo</h3><p>El secreto de "lo suficiente" del monje que la ciencia declaró el hombre más feliz del planeta.</p></div></div>
+      <div class="card"><img src="img/cap4_judaismo.jpg" alt=""><div class="body"><h3>Judaísmo</h3><p>El sistema financiero de 2.000 años que Warren Buffett aplica sin saberlo.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ INCLUYE -->
+<section class="incluye">
+  <div class="wrap">
+    <div class="eyebrow-c">Qué incluye</div>
+    <h2>Mucho más que un ebook</h2>
+    <div class="barra"></div>
+    <div class="box"><div class="ic">📕</div><div><h3>El ebook completo ilustrado</h3><p>Cinco tradiciones + el patrón universal, con fuentes científicas reales.</p></div><div class="tag">Principal</div></div>
+    <div class="box"><div class="ic">📋</div><div><h3>Plan práctico de 4 semanas</h3><p>Una semana, un principio, un hábito que se queda. De la sabiduría a la acción.</p></div><div class="tag">Incluido</div></div>
+    <div class="box"><div class="ic">🎧</div><div><h3>Audio-resumen</h3><p>Para escucharlo mientras caminas o conduces.</p></div><div class="tag">Bono</div></div>
+    <div class="box"><div class="ic">🔖</div><div><h3>Guía rápida "Los 3 principios"</h3><p>El resumen de una página para tener siempre a mano.</p></div><div class="tag">Bono</div></div>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow-c">¿Es para ti?</div>
+    <h2>Para quién es este libro</h2>
+    <div class="barra"></div>
+    <div class="dos">
+      <div class="pq"><h3>Sí, es para ti si…</h3>
+        <li>Quieres mejorar tu relación con el dinero sin humo financiero.</li>
+        <li>Te atrae la espiritualidad y el desarrollo personal con rigor.</li>
+        <li>Ya leíste mil consejos y sientes que te falta el "para qué".</li>
+      </div>
+      <div class="pq no"><h3>No es para ti si…</h3>
+        <li>Buscas un esquema para "hacerte rico rápido".</li>
+        <li>Quieres trading o criptomonedas.</li>
+        <li>No estás dispuesto a aplicar nada de lo que leas.</li>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTORIDAD -->
+<section class="auth">
+  <div class="wrap">
+    <div class="eyebrow-c">No es opinión</div>
+    <h2>Sabiduría antigua, respaldo moderno</h2>
+    <div class="barra"></div>
+    <p>Cada principio del libro está acompañado de estudios reales: desde cómo las prácticas de estas tradiciones <em>amortiguan</em> el estrés financiero, hasta cómo activar tu identidad de valores cambia tus decisiones económicas de forma medible.</p>
+    <p class="fuentes">Fuentes: Social Science &amp; Medicine (2010) · Journal of Religious Health (2024) · Review of Economics and Statistics (2016)</p>
+  </div>
+</section>
+
+<!-- TESTIMONIOS (placeholder) -->
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow-c">Lo que dicen los lectores</div>
+    <h2>Testimonios</h2>
+    <div class="barra"></div>
+    <div class="testi">
+      <div class="t">"[Aquí irá el testimonio real de un primer lector. Reemplazar tras las primeras ventas.]"</div>
+      <div class="t">"[Testimonio 2 — pídelo a tus primeros compradores a cambio de un bono.]"</div>
+      <div class="t">"[Testimonio 3 — capturas de WhatsApp o reseñas funcionan muy bien.]"</div>
+    </div>
+    <p class="testi-nota">⚠️ Placeholders — reemplazar por testimonios reales. Nunca inventar.</p>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="oferta" id="CHECKOUT_HOTMART">
+  <div class="wrap">
+    <div class="eyebrow-c" style="color:var(--oro2)">Tu ejemplar</div>
+    <h2>Empieza hoy a cambiar tu relación con el dinero</h2>
+    <div class="barra"></div>
+    <div class="precio-box">
+      <div class="precio"><span class="moneda">$</span>17</div>
+      <div class="precio-sub">Pago único · acceso inmediato y para siempre</div>
+      <a class="btn" href="#CHECKOUT_HOTMART">Quiero mi ejemplar ahora<small>Tarjeta · PayPal · efectivo</small></a>
+      <div class="garantia"><span class="sello">🛡️</span><span>Garantía incondicional de 7 días. Si no es para ti, te devolvemos el 100%.</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="marca">Sabiduría Kairos</div>
+    <div>Sabiduría que no tiene fronteras religiosas · Serie Sabiduría y Dinero</div>
+  </div>
+</footer>
+
+</body>
+</html>

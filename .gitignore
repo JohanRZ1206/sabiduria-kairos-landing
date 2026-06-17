@@ -1,0 +1,10 @@
+# Scripts de build / verificación (no van al sitio público)
+verificar.js
+node_modules/
+package.json
+package-lock.json
+
+# Temporales
+_check_*.png
+.DS_Store
+Thumbs.db
